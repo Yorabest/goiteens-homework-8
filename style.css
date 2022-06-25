@@ -152,9 +152,12 @@ span {
   letter-spacing: 0.02em;
 }
 
-.contacts-nav a:focus,
-.contacts-nav a:hover {
+.contacts-nav .contacts-link:focus,
+.contacts-nav .contacts-link:hover,
+.contacts-icon:focus,
+.contacts-icon:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .list-item {
@@ -163,6 +166,16 @@ span {
 
 .list-item:last-child {
   margin-right: 0;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* блок герой*/
@@ -257,6 +270,18 @@ span {
   justify-content: space-between;
 }
 
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  background-color: var(--background-button);
+}
+
 .features-item {
   width: 270px;
 }
@@ -322,6 +347,12 @@ span {
 
 .team-link img {
   margin-bottom: 30px;
+}
+
+.team-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*Footer*/
